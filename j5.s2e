@@ -2,8 +2,9 @@
 	"extensionName": "Johnny-Five",
 	"extensionPort": 9023,
 	"blockSpecs": [
-		[" ", "servo %n cw at speed %n", "servoCw", 10, 1],
-		[" ", "servo %n ccw at speed %n", "servoCcw", 10, 1],
-		[" ", "servo %n stop", "servoStop", 10]
+	    [" ", "create %s servo named %s on pin %n", "servoCreate", "continuous", "my servo", 10],
+		[" ", "servo %s clockwise at speed %n", "servoCw", "my servo", 1],
+		[" ", "servo %s counter-clockwise at speed %n", "servoCcw", "my servo", 1],
+		[" ", "servo %s stop", "servoStop", "my servo"]
  	]
 }
